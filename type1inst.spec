@@ -1,8 +1,9 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	Type 1 font install utility
 Summary(pl):	Narzêdzie instalacyjne czcionek Type 1
 Name:		type1inst
 Version:	0.6.1
-Release:	5
+Release:	6
 License:	GPL
 Group:		Applications
 Source0:	ftp://sunsite.unc.edu/pub/Linux/X11/xutils/%{name}-%{version}.tar.gz
@@ -10,7 +11,6 @@ Source0:	ftp://sunsite.unc.edu/pub/Linux/X11/xutils/%{name}-%{version}.tar.gz
 Patch0:		%{name}-chmod.patch
 URL:		http://goblet.anu.edu.au/~m9305357/type1inst.html
 Requires:	groff
-Requires:	perl
 Requires:	fileutils
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
