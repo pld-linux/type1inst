@@ -10,7 +10,7 @@ Source:		ftp://sunsite.unc.edu/pub/Linux/X11/xutils/%{name}-%{version}.tar.gz
 URL:		http://goblet.anu.edu.au/~m9305357/type1inst.html
 Requires:	groff
 BuildArch:	noarch
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 type1inst is a utility which scans Type 1 PostScript font files and
