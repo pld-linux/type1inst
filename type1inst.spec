@@ -12,6 +12,7 @@ Patch0:		%{name}-chmod.patch
 URL:		http://goblet.anu.edu.au/~m9305357/type1inst.html
 Requires:	groff
 Requires:	perl
+Requires:	fileutils
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
