@@ -2,7 +2,7 @@ Summary:	Type 1 font install utility
 Summary(pl):	Narzêdzie instalacyjne czcionek Type 1
 Name:		type1inst
 Version:	0.6.1
-Release:	4
+Release:	5
 License:	GPL
 Group:		Applications
 Source0:	ftp://sunsite.unc.edu/pub/Linux/X11/xutils/%{name}-%{version}.tar.gz
