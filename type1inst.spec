@@ -29,7 +29,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/usr/{bin,man/man1}
 
 install t1embed type1inst $RPM_BUILD_ROOT/usr/bin
-install type1inst.man $RPM_BUILD_ROOT/usr/man/man1/type1inst.1
+install type1inst.man $RPM_BUILD_ROOT%{_mandir}/man1/type1inst.1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README.gz
 %attr(755,root,root) /usr/bin/*
-/usr/man/man1/*
+%{_mandir}/man1/*
 
 %changelog
 * Sun Sep  6 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
