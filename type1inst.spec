@@ -39,31 +39,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.gz
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
-
-%changelog
-* Sun Sep  6 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [0.6.1-3]
-- fixed %attr for %doc.
-
-* Wed May  6 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [0.6.1-2]
-- %%{version} macro instead %%{PACKAGE_VERSION},
-- added -q %setup parameter,
-- added using %%{name} macro in Buildroot and Source field,
-
-* Fri Apr 10 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-- chaned summary,
-- removed COPING from %doc (copyright stantment is in Copyright field),
-- Buildroot changed to /tmp/type1inst-%%{PACKAGE_VERSION}-root,
-- added URL field,
-- added %%{PACKAGE_VERSION} to Source url,
-- replaced "mkdir -p" with "install -d" in %install,
-- added %attr macros in %files (allows building package from
-  non-root account).
-
-* Mon Dec 29 1997 Joel Young <jyoung@erols.com>
-- rebuilt with version 0.6
-
-* Tue Dec 12 1997 Peter Soos <sp@osb.hu>
-- Moved to noarc architecture
-- Now we use BuildRoot
