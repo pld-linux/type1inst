@@ -5,8 +5,6 @@ Version:	0.6.1
 Release:	4
 License:	GPL
 Group:		Applications
-Group(de):	Applikationen
-Group(pl):	Aplikacje
 Source0:	ftp://sunsite.unc.edu/pub/Linux/X11/xutils/%{name}-%{version}.tar.gz
 Patch0:		%{name}-chmod.patch
 URL:		http://goblet.anu.edu.au/~m9305357/type1inst.html
