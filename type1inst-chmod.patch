@@ -1,0 +1,57 @@
+diff -Nur type1inst-0.6.1.orig/type1inst type1inst-0.6.1/type1inst
+--- type1inst-0.6.1.orig/type1inst	Wed Feb 11 12:00:13 1998
++++ type1inst-0.6.1/type1inst	Sun Apr  8 00:27:24 2001
+@@ -764,7 +764,7 @@
+ 	print SCALE "$fontdata{$key}\n";
+     }
+     close(SCALE);
+-    system ("chmod 0755 fonts.scale") && log_msg("Coudln't chmod \"fonts.scale\" ... continuing on anyway\n");
++    system ("chmod 0644 fonts.scale") && log_msg("Coudln't chmod \"fonts.scale\" ... continuing on anyway\n");
+ 
+     log_only_msg(" Done.\n");
+ }
+@@ -838,7 +838,7 @@
+ 	print FONTMAP "($key)\t;\n";
+     }
+     close(FONTMAP);
+-    system ("chmod 0755 Fontmap") && log_msg("Couldn't chmod \"Fontmap\" ... continuing on anyway\n");
++    system ("chmod 0644 Fontmap") && log_msg("Couldn't chmod \"Fontmap\" ... continuing on anyway\n");
+ 
+     log_only_msg(" Done.\n");
+ }
+@@ -946,7 +946,7 @@
+     die("Couldn't open samples/$samplefile\n");
+     print SAMPLE "$text\n";
+     close(SAMPLE);
+-    system("chmod 0755 samples/$samplefile") && log_msg("Couldn't chmod individual sample file \"samples/$samplefile\" ... continuing on anyway\n");
++    system("chmod 0644 samples/$samplefile") && log_msg("Couldn't chmod individual sample file \"samples/$samplefile\" ... continuing on anyway\n");
+ 
+ # For the "allfont.ps" files we use a standard font for the font name so
+ # that in the case of non-alpha fonts we still can still read the name of
+@@ -985,7 +985,7 @@
+     if ($height < 100) {
+ 	print ALLSAMPLE "showpage\n";
+ 	close(ALLSAMPLE);
+-	system("chmod 0755 $allsample") && log_msg("Couldn't chmod all sample sheet \"$allsample\" ... continuing on anyway\n");
++	system("chmod 0644 $allsample") && log_msg("Couldn't chmod all sample sheet \"$allsample\" ... continuing on anyway\n");
+ 	$height = 700;
+     }
+ 
+@@ -1249,7 +1249,7 @@
+ if ($dox) {
+     &write_fonts_scale(%fs);
+     system("mkfontdir");      # Generate fonts.dir
+-    system("chmod 0755 fonts.dir") && log_msg("Couldn't chmod \"fonts.dir\" ... continuing on anyway\n");
++    system("chmod 0644 fonts.dir") && log_msg("Couldn't chmod \"fonts.dir\" ... continuing on anyway\n");
+ }
+ if ($dogs) {
+     &write_fontmap(%fm);
+@@ -1261,7 +1261,7 @@
+     if ($height < 700) {
+ 	print ALLSAMPLE "showpage\n";
+ 	close(ALLSAMPLE);
+-	system("chmod 0755 $allsample") && log_msg("Couldn't chmod \"$allsample\" ... continuing on anyway\n");
++	system("chmod 0644 $allsample") && log_msg("Couldn't chmod \"$allsample\" ... continuing on anyway\n");
+     }
+ }
+ 
