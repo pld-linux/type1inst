@@ -26,10 +26,12 @@ required.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/{bin,man/man1}
+install -d $RPM_BUILD_ROOT/{%{_bindir},%{_mandir}/man1}
 
 install t1embed type1inst $RPM_BUILD_ROOT%{_bindir}
 install type1inst.man $RPM_BUILD_ROOT%{_mandir}/man1/type1inst.1
+
+gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/type1inst.1 README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
