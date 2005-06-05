@@ -10,6 +10,7 @@ Source0:	ftp://sunsite.unc.edu/pub/Linux/X11/xutils/%{name}-%{version}.tar.gz
 # Source0-md5:	86fd885e9877896c51ae6cbe23d89ccf
 Patch0:		%{name}-chmod.patch
 URL:		http://goblet.anu.edu.au/~m9305357/type1inst.html
+BuildRequires:	rpm-perlprov
 Requires:	groff
 Requires:	fileutils
 BuildArch:	noarch
