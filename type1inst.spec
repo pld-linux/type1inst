@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Type 1 font install utility
-Summary(pl):	Narzêdzie instalacyjne czcionek Type 1
+Summary(pl.UTF-8):   NarzÄ™dzie instalacyjne czcionek Type 1
 Name:		type1inst
 Version:	0.6.1
 Release:	6
@@ -28,15 +28,15 @@ type1inst is a Perl script so you will need to have that installed on
 your system. The pfbtops utility (which comes as part of GNU groff) is
 also required.
 
-%description -l pl
-type1inst jest programem, który skanuje pliki czcionek PostScript Type
-1 i tworzy plik fonts.scale i/lub plik Fontmap na u¿ytek X Window
-System i Ghostscript. Potrafi równie¿ wygenerowaæ proste przyk³ady
+%description -l pl.UTF-8
+type1inst jest programem, ktÃ³ry skanuje pliki czcionek PostScript Type
+1 i tworzy plik fonts.scale i/lub plik Fontmap na uÅ¼ytek X Window
+System i Ghostscript. Potrafi rÃ³wnieÅ¼ wygenerowaÄ‡ proste przykÅ‚ady
 zainstalowanych czcionek.
 
-type1inst jest skryptem Perla, wiêc musisz mieæ go zainstalowanego
-je¶li chcesz u¿ywaæ type1inst. Wymagane jest równie¿ narzêdzie pfbtops
-(które znajduje siê w pakiecie GNU groff).
+type1inst jest skryptem Perla, wiÄ™c musisz mieÄ‡ go zainstalowanego
+jeÅ›li chcesz uÅ¼ywaÄ‡ type1inst. Wymagane jest rÃ³wnieÅ¼ narzÄ™dzie pfbtops
+(ktÃ³re znajduje siÄ™ w pakiecie GNU groff).
 
 %prep
 %setup -q
