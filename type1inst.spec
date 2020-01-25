@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	Type 1 font install utility
 Summary(pl.UTF-8):	Narzędzie instalacyjne czcionek Type 1
 Name:		type1inst
