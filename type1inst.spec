@@ -3,13 +3,15 @@ Summary(pl.UTF-8):	Narzędzie instalacyjne czcionek Type 1
 Name:		type1inst
 Version:	0.6.1
 Release:	7
-License:	GPL
+License:	GPL v2+
 Group:		Applications
-Source0:	ftp://sunsite.unc.edu/pub/Linux/X11/xutils/%{name}-%{version}.tar.gz
+Source0:	http://www.ibiblio.org/pub/Linux/X11/xutils/%{name}-%{version}.tar.gz
 # Source0-md5:	86fd885e9877896c51ae6cbe23d89ccf
 Patch0:		%{name}-chmod.patch
-URL:		http://goblet.anu.edu.au/~m9305357/type1inst.html
+# dead (host not found)
+#URL:		http://goblet.anu.edu.au/~m9305357/type1inst.html
 BuildRequires:	rpm-perlprov
+BuildRequires:	rpmbuild(macros) >= 1.745
 Requires:	groff
 Requires:	fileutils
 BuildArch:	noarch
@@ -53,6 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
-%attr(755,root,root) %{_bindir}/*
-%{_mandir}/man1/*
+%doc ChangeLog README
+%attr(755,root,root) %{_bindir}/t1embed
+%attr(755,root,root) %{_bindir}/type1inst
+%{_mandir}/man1/type1inst.1*
