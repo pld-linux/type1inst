@@ -41,7 +41,7 @@ jeśli chcesz używać type1inst. Wymagane jest również narzędzie pfbtops
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
